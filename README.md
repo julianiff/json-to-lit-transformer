@@ -30,8 +30,8 @@ The Input JSON needs to follow a specific structure to be parsed correctly.
 ```
 
 Array [
-        <name-of-the-webcomponentkey="value">
-            <name-of-the-childkey="value"slot="header">
+        <name-of-the-webcomponent key="value">
+            <name-of-the-child key="value" slot="header">
                 Author
             </name-of-the-child>
         </name-of-the-webcomponent>,
