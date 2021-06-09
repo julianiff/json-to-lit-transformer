@@ -1,11 +1,15 @@
 {
     "name": "json-to-lit-transformer",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "JSON to Lit transformer",
     "author": "Julian Iff",
     "license": "SEE LICENSE IN LICENSE",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/julianiff/json-to-lit-transformer"
+    },
     "dependencies": {},
     "devDependencies": {
         "@types/jest": "^26.0.15",
