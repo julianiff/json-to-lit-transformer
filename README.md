@@ -46,7 +46,7 @@ Array [
 ```
 
 ```
-    const testJSON = [
+const testJSON = [
     {
         component: "iff-page-layout",
         props: [{ theme: "light" }],
