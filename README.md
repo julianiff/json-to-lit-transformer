@@ -43,7 +43,6 @@ Array [
 
 ```
     yarn add json-to-lit-transformer
-
 ```
 
 ```
