@@ -1,6 +1,6 @@
 {
     "name": "json-to-lit-transformer",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "JSON to Lit transformer",
     "author": "Julian Iff",
     "license": "SEE LICENSE IN LICENSE",
@@ -28,6 +28,7 @@
     },
     "scripts": {
         "build": "tsc",
+        "prepublish": "tsc -p tsconfig.build.json",
         "watch": "tsc --watch",
         "clean": "rimraf coverage",
         "test": "jest --verbose --coverage",
