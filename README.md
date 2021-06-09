@@ -38,3 +38,37 @@ Array [
     ]
 
 ```
+
+## Usage
+
+```
+    yarn add json-to-lit-transformer
+
+```
+
+```
+    const testJSON = [
+    {
+        component: "iff-page-layout",
+        props: [{ theme: "light" }],
+        innerText: "",
+        slots: [
+            {
+                slotName: "header",
+                component: "iff-title",
+                props: [{ level: "1" }],
+                innerText: "Author",
+                slots: [],
+            },
+        ],
+    },
+];
+
+const HTMLOutputArray = transformJsonToLit(testJSON);
+
+const litHTML = () => {
+    return html`
+        ${HTMLOutputArray}
+    `
+}
+```
