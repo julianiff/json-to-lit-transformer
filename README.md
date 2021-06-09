@@ -42,7 +42,7 @@ Array [
 ## Usage
 
 ```
-    yarn add json-to-lit-transformer
+yarn add json-to-lit-transformer
 ```
 
 ```
