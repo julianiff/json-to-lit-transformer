@@ -16,8 +16,8 @@ const testJSON = [
     },
 ];
 
-describe("article Component", () => {
-    test("should return article Component markup", async () => {
+describe("Sample Json", () => {
+    test("sShould render correct transformed markup", async () => {
         const actual = transformJsonToLit(testJSON);
 
         expect(actual).toMatchInlineSnapshot(`

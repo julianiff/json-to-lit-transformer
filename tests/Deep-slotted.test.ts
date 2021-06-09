@@ -85,8 +85,8 @@ const DeepNestedTestJson = [
     },
 ];
 
-describe("article Component", () => {
-    test("should return article Component markup", async () => {
+describe("Deep Slotted test", () => {
+    test("Should render correct transformed markup", async () => {
         const actual = transformJsonToLit(DeepNestedTestJson);
 
         expect(actual).toMatchInlineSnapshot(`
