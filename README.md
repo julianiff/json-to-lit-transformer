@@ -6,7 +6,7 @@ A simple Transformer that converts specified JSON to Lit Webcomponents
 
 The Input JSON needs to follow a specific structure to be parsed correctly.
 
-###Sample Input:
+### Sample Input:
 
 ```
 {
@@ -25,7 +25,7 @@ The Input JSON needs to follow a specific structure to be parsed correctly.
 }
 ```
 
-###Sample Output:
+### Sample Output:
 
 ```
 
