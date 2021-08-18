@@ -15,7 +15,7 @@ The Input JSON needs to follow a specific structure to be parsed correctly.
     innerText: "", // If there is direct inner text in component
     slots: [ // What comes into the slots of the component
         {
-            slotName: "header", // the named slot, leave blank if there is no slot
+            slotName: "header", // the named slot, leave blank for the no named slot
             component: "name-of-the-child", // Any Web-component name
             props: [{key: value}], // any Key Values for the Props
             innerText: "", // If there is direct inner text in component
@@ -30,8 +30,8 @@ The Input JSON needs to follow a specific structure to be parsed correctly.
 ```
 
 Array [
-        <name-of-the-webcomponentkey="value">
-            <name-of-the-childkey="value"slot="header">
+        <name-of-the-webcomponent key="value">
+            <name-of-the-child key="value" slot="header">
                 Author
             </name-of-the-child>
         </name-of-the-webcomponent>,
