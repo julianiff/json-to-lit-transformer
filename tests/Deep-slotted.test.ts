@@ -3,43 +3,42 @@ import { transformJsonToLit } from "../src/transformJsonToLit";
 const DeepNestedTestJson = [
     {
         component: "iff-page-layout",
-        props: [{ theme: "dark" }],
-        innerText: "",
+        props: { theme: "dark" },
         slots: [
             {
                 slotName: "header",
                 component: "iff-title",
-                props: [{ level: "1" }],
+                props: { level: "1" },
                 innerText: "Test",
                 slots: [],
             },
             {
                 slotName: "body",
                 component: "iff-split",
-                props: [],
+                props: {},
                 slots: [
                     {
                         slotName: "start-text",
                         component: "iff-link",
-                        props: [{ event: "Code" }],
+                        props: { event: "Code" },
                         slots: [
                             {
                                 slotName: "",
                                 component: "iff-title-modal",
-                                props: [],
+                                props: {},
                                 innerText: "Code",
                                 slots: [
                                     {
                                         slotName: "title",
                                         component: "iff-title",
-                                        props: [{ level: 1 }],
+                                        props: { level: 1 },
                                         innerText: "Code",
                                         slots: [],
                                     },
                                     {
                                         slotName: "modal-text",
                                         component: "iff-title",
-                                        props: [{ level: 3 }],
+                                        props: { level: 3 },
                                         innerText: "Tset",
                                         slots: [],
                                     },
@@ -50,28 +49,24 @@ const DeepNestedTestJson = [
                     {
                         slotName: "end-text",
                         component: "iff-link",
-                        props: [{ href: "dev/projects" }],
+                        props: { href: "dev/projects" },
                         slots: [
                             {
                                 slotName: "",
                                 component: "iff-title-modal",
-                                props: [
-                                    {
-                                        modalTextOrientation: "rotate(-90deg)",
-                                    },
-                                ],
+                                props: { modalTextOrientation: "rotate(-90deg)" },
                                 slots: [
                                     {
                                         slotName: "title",
                                         component: "iff-title",
-                                        props: [{ level: 1 }],
+                                        props: { level: 1, test: "addedAttribute" },
                                         innerText: "Test",
                                         slots: [],
                                     },
                                     {
                                         slotName: "modal-text",
                                         component: "iff-title",
-                                        props: [{ level: 3 }],
+                                        props: { level: 3 },
                                         innerText: "test",
                                         slots: [],
                                     },
@@ -136,6 +131,7 @@ describe("Deep Slotted test", () => {
                       <iff-title
                         level="1"
                         slot="title"
+                        test="addedAttribute"
                       >
                         Test
                       </iff-title>

@@ -1,10 +1,10 @@
-type propsStructure = {
-    [key in string]: string;
+export type propsStructure = {
+    [key in string]: any;
 };
 
 interface Component {
     component: string;
-    props: propsStructure[];
+    props: propsStructure;
     innerText?: string;
 }
 

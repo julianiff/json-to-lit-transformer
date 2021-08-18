@@ -1,4 +1,4 @@
-import { JsonStructure, slottedElement } from "./Interface";
+import { JsonStructure, propsStructure, slottedElement } from "./Interface";
 
 export const transformJsonToLit = (json: JsonStructure[]): HTMLElement[] => {
     return json.map((item) => {
@@ -8,9 +8,11 @@ export const transformJsonToLit = (json: JsonStructure[]): HTMLElement[] => {
     });
 };
 
-const createAttributedTag = (tagName: string, attributes: any[]): HTMLElement => {
+const createAttributedTag = (tagName: string, attributes: propsStructure): HTMLElement => {
     const tag = document.createElement(tagName);
-    attributes.forEach((item) => tag.setAttribute(Object.keys(item)[0], item[Object.keys(item)[0]]));
+    for (const key in attributes) {
+        tag.setAttribute(key, attributes[key]);
+    }
     return tag;
 };
 

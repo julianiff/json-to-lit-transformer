@@ -2,13 +2,13 @@ import { transformJsonToLit } from "../src/transformJsonToLit";
 const testJSON = [
     {
         component: "iff-page-layout",
-        props: [{ theme: "light" }],
+        props: { theme: "light" },
         innerText: "",
         slots: [
             {
                 slotName: "header",
                 component: "iff-title",
-                props: [{ level: "1" }],
+                props: { level: "1" },
                 innerText: "Author",
                 slots: [],
             },
